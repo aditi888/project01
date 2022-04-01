@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EasyTraffic</string>
+    <string name="sendotp">We will send you OTP on mobile number</string>
+    <string name="OTPVerification">OTP Verification</string>
+    <string name="EnterMobileNumber">Enter Mobile Number</string>
+    <string name="title_activity_my_location">myLocation</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="longitude">Longitude</string>
+    <string name="update_location">Update Location</string>
+    <string name="latitude">Latitude</string>
+</resources>
