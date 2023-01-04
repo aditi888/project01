@@ -60,7 +60,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION}, PackageManager.PERMISSION_GRANTED);
 
         editTextLatitude = findViewById(R.id.editText);                 //linking the layout with this file
-        editTextLatitude = findViewById(R.id.editText2);
+        editTextLongitude = findViewById(R.id.editText2);
 
         databaseReference = FirebaseDatabase.getInstance().getReference("Location");
         databaseReference.addValueEventListener(new ValueEventListener() {
@@ -118,7 +118,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 //        LatLng sydney = new LatLng(-34, 151);
 //        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
 //        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
-        locationListener=new LocationListener() {
+
+        locationListener= new LocationListener () {
             @Override
             public void onLocationChanged(@NonNull Location location) {
                 try {

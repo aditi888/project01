@@ -92,7 +92,7 @@ public class verifyotp2 extends AppCompatActivity {
 
                                               //will move to new screen if task successful
                                               if (task.isSuccessful()) {
-                                                  Intent intent = new Intent(getApplicationContext(), dashboard.class);
+                                                  Intent intent = new Intent(getApplicationContext(), camera3.class);
                                                   intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                                   startActivity(intent);
                                               } else {
